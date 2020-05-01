@@ -1,0 +1,2 @@
+# Documentation
+Collection of documentation
