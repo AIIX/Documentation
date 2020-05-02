@@ -164,7 +164,7 @@
     cd /etc
     cd ld.so.conf.d
     touch vclib.conf
-    sudo nano vclib.con
+    sudo nano vclib.conf
     ## on the first line add and save:
     /opt/vc/lib
     ```
