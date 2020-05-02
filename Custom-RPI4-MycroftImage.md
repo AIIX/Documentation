@@ -73,7 +73,8 @@
     
     ##### Install Depenencies For Mycroft-GUI:
     ```
-    sudo apt-get install -y git-core g++ cmake extra-cmake-modules kio-dev gettext pkg-config pkg-kde-tools qtbase5-dev qtdeclarative5-dev kio-dev libkf5notifications-data libkf5notifications-dev qml-module-qtquick2 qml-module-qtquick-controls2 qml-module-qtquick-controls qml-module-qtwebsockets qml-module-qt-websockets qtdeclarative5-qtquick2-plugin qtdeclarative5-models-plugin cmake cmake-extras cmake-data qml-module-qtquick-layouts libkf5plasma-dev extra-cmake-modules qtdeclarative5-dev build-essential g++ gettext libqt5webkit5 libqt5webkit5-dev libkf5i18n-data libkf5i18n-dev libkf5i18n5 qml-module-qtgraphicaleffects libqt5dbus5 libkf5dbusaddons-dev libdbus-1-dev libdbus-glib-1-dev kio-dev libkf5kio-dev libqt5websockets5-dev libqt5webview5-dev
+    sudo apt-get install -y git-core g++ cmake extra-cmake-modules kio-dev gettext pkg-config pkg-kde-tools qtbase5-dev qtdeclarative5-dev kio-dev libkf5notifications-data libkf5notifications-dev qml-module-qtquick2 qml-module-qtquick-controls2 qml-module-qtquick-controls qml-module-qtwebsockets qml-module-qt-websockets qtdeclarative5-qtquick2-plugin qtdeclarative5-models-plugin cmake cmake-extras cmake-data qml-module-qtquick-layouts libkf5plasma-dev extra-cmake-modules qtdeclarative5-dev build-essential g++ gettext libqt5webkit5 libqt5webkit5-dev libkf5i18n-data libkf5i18n-dev libkf5i18n5 qml-module-qtgraphicaleffects libqt5dbus5 libkf5dbusaddons-dev libdbus-1-dev libdbus-glib-1-dev kio-dev libkf5kio-dev libqt5websockets5-dev libqt5webview5-dev qml-module-qtquick-virtualkeyboard libqt5virtualkeyboard5-dev qtvirtualkeyboard-plugin
+    
     ```
     
     ##### Build Mycroft-GUI:
@@ -157,6 +158,18 @@
 
 8. Enabled V3D Graphics on RPI4
     
+    If /opt/vc does not exist on image download https://github.com/raspberrypi/firmware/tree/master/opt/vc folder only to /opt/vc.
+    - LD Link VC LIB
+    ```
+    cd /etc
+    cd ld.so.conf.d
+    touch vclib.conf
+    sudo nano vclib.con
+    ## on the first line add and save:
+    /opt/vc/lib
+    ```
+    
+    Install Graphics Driver PPA
     ```
     sudo add-apt-repository ppa:oibaf/graphics-drivers
     sudo apt update
