@@ -53,7 +53,7 @@
 
     ##### Install System Packages First:
     ```
-    sudo apt-install sddm kwin-wayland kwin-x11 openssh-server ftp i2c-tools konsole nano plasma-workspace-wayland plasma-workspace plasma-pa plasma-widgets-addons libkf5wallet-bin gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-fluendo-mp3 qml-module-qtmultimedia qml-module-org-kde-lottie network-manager plasma-nm konsole
+    sudo apt-install sddm kwin-wayland kwin-x11 openssh-server ftp i2c-tools konsole nano plasma-workspace-wayland plasma-workspace plasma-pa plasma-widgets-addons libkf5wallet-bin gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-fluendo-mp3 qml-module-qtmultimedia network-manager plasma-nm konsole plasma-workspace-dev
     
     # Select SDDM if asked for configuring Login Manager.
     ```
