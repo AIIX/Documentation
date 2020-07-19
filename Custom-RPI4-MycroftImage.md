@@ -18,10 +18,12 @@
     Add bionic-updates apt repo:
     ```
     echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-updates main restricted multiverse universe" >> /etc/apt/sources.list
+    echo "deb-src http://ports.ubuntu.com/ubuntu-ports bionic-updates main restricted multiverse universe" >> /etc/apt/sources.list
     ```
     Add bionic-backports apt repo:
     ```
     echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-backports main restricted multiverse universe" >> /etc/apt/sources.list
+    echo "deb-src http://ports.ubuntu.com/ubuntu-ports bionic-backports main restricted multiverse universe" >> /etc/apt/sources.list
     ```
     Add KDE Neon gpg key:
     ```
@@ -30,6 +32,7 @@
 4. Add neon apt repository:
    ```
    echo "deb https://archive.neon.kde.org/unstable bionic main" > /etc/apt/sources.list.d/neon.list
+   echo "deb-src https://archive.neon.kde.org/unstable bionic main" > /etc/apt/sources.list.d/neon.list
    ```
    
 5. Mycroft-Core Installation:
