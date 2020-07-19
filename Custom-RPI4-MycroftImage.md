@@ -18,10 +18,12 @@
     Add bionic-updates apt repo:
     ```
     echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-updates main restricted multiverse universe" >> /etc/apt/sources.list
+    echo "deb-src http://ports.ubuntu.com/ubuntu-ports bionic-updates main restricted multiverse universe" >> /etc/apt/sources.list
     ```
     Add bionic-backports apt repo:
     ```
     echo "deb http://ports.ubuntu.com/ubuntu-ports bionic-backports main restricted multiverse universe" >> /etc/apt/sources.list
+    echo "deb-src http://ports.ubuntu.com/ubuntu-ports bionic-backports main restricted multiverse universe" >> /etc/apt/sources.list
     ```
     Add KDE Neon gpg key:
     ```
@@ -30,6 +32,7 @@
 4. Add neon apt repository:
    ```
    echo "deb https://archive.neon.kde.org/unstable bionic main" > /etc/apt/sources.list.d/neon.list
+   echo "deb-src https://archive.neon.kde.org/unstable bionic main" > /etc/apt/sources.list.d/neon.list
    ```
    
 5. Mycroft-Core Installation:
@@ -40,7 +43,7 @@
    cd ~
    git clone https://github.com/MycroftAI/mycroft-core
    cd mycroft-core
-   ./dev-setup.sh -sm 
+   ./dev_setup.sh -sm 
    ```
    
    ##### Install Mimic:
@@ -53,7 +56,7 @@
 
     ##### Install System Packages First:
     ```
-    sudo apt-install sddm kwin-wayland kwin-x11 openssh-server ftp i2c-tools konsole nano plasma-workspace-wayland plasma-workspace plasma-pa plasma-widgets-addons libkf5wallet-bin gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-fluendo-mp3 qml-module-qtmultimedia network-manager plasma-nm konsole plasma-workspace-dev
+    sudo apt install sddm kwin-wayland kwin-x11 openssh-server ftp i2c-tools konsole nano plasma-workspace-wayland plasma-workspace plasma-pa plasma-widgets-addons libkf5wallet-bin gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-fluendo-mp3 qml-module-qtmultimedia network-manager plasma-nm konsole plasma-workspace-dev
     
     # Select SDDM if asked for configuring Login Manager.
     ```
@@ -118,6 +121,7 @@
     Run Following Scripts:
 
     ```
+    cd ~
     git clone https://github.com/MycroftAI/mycroft-devices
     cd mycroft-devices
     cd scripts
