@@ -121,6 +121,7 @@
     Run Following Scripts:
 
     ```
+    cd ~
     git clone https://github.com/MycroftAI/mycroft-devices
     cd mycroft-devices
     cd scripts
